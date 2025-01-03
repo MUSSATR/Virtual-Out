@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visites Virtuelles Immersives</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Virtual Out</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#categories">Catégories</a></li>
+                <li><a href="#contact">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière -->
+    <section class="banner" role="banner">
+        <h1>Explorez les lieux de vos envies</h1>
+        <input type="text" placeholder="Recherchez des lieux, restaurants, etc.">
+    </section>
+
+    <!-- Catégories -->
+    <main role="main">
+        <section id="categories">
+            <h2>Catégories</h2>
+            <div class="categories">
+                <div class="category">
+                    <a href="restaurants.html">
+                        <img src="https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_Seine_Tour_Eiffel_2.jpg" alt="Restaurants">
+                        <h3>Restaurants</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="bars.html">
+                        <img src="https://i.pinimg.com/originals/ac/4e/28/ac4e28af117cfc201c65fcc1d3851b83.jpg" alt="Bars">
+                        <h3>Bars</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="salles-de-jeux.html">
+                        <img src="https://www.sybelles.ski/wp-content/uploads/2023/09/Hero-Salle-de-jeux.webp" alt="Salles de jeux">
+                        <h3>Salles de jeux</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="attractions.html">
+                        <img src="https://expatexperiment.com/wp-content/uploads/2016/09/CALG6427-1024x683.jpg" alt="Attractions touristiques">
+                        <h3>Attractions touristiques</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="evenements.html">
+                        <img src="https://les-seminaires.eu/wp-content/uploads/2019/04/organisation-evenement-entreprise-735x400.png" alt="Événements">
+                        <h3>Événements</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="magasins.html">
+                        <img src="https://media.lesechos.com/api/v1/images/view/5c0693628fe56f5a7d327c6b/1280x720/ech22287092-1.jpg" alt="Magasins">
+                        <h3>Magasins</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 Visites Immersives. Tous droits réservés.</p>
+        <form>
+            <label for="email">Inscrivez-vous à notre newsletter :</label>
+            <input type="email" id="email" placeholder="Votre email" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </footer>
+
+    <script>
+        document.querySelector('.banner input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                alert("Recherche en cours pour : " + e.target.value);
+            }
+        });
+    </script>
+</body>
+
+</html>
